@@ -170,6 +170,7 @@ div.no-padding-right{
 }
 .single-dovoltis-porris{
     border-bottom: 1px solid #ccc;
+    margin-top: 20px;
 }
 
 .post-category{
@@ -213,7 +214,24 @@ div.no-padding-right{
 .margin-top-160{
     margin-top: 160px;
 }
+.margin-top-50{
+    margin-top: 50px;
+}
+.align-right{
+    text-align: right;
+}
+.desktop-hidden{
+    display: none;
+}
+.section-ads img{
+    width: 100%;
+}
 
+@media only screen and (max-width:992px) {
+    .desktop-hidden{
+        display: block;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     .phone-hidden{
@@ -221,5 +239,19 @@ div.no-padding-right{
     }
     .carrosel p{
         bottom: 10px;
+    }
+    div.no-padding-left{
+        padding-left: unset;
+    }
+    div.no-padding-right{
+        padding-right: unset;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    header.content-padding,
+    section.content-padding,
+    .content-padding{
+        padding: 0 150px;
     }
 }
